@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=IBM+Plex+Serif:ital@1&display=swap');
+
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-text-color:rgb(55, 13, 124);;
+    --secondary-text-color: rgb(7, 74, 121);
+    --accent-color:rgb(236, 49, 152);   
+    --accent-color-dark:rgba(137, 8, 77, 0.4);
+    --padding-inline-section:20px;
+}
+body{
+    font-family:'poppins',sans-serif;
+     color: var(--primary-text-color);
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+h2{
+    font-size: 1.5rem;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* utility class */
+
+.text-block-2{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+.hover-links{
+    color: var(--primary-text-color);
+}
+.hover-links:hover{
+ color: var(--accent-color);
+}
+/*  button    button */
+.primry-btn{
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: white !important;
+    padding: 12px 24px;
+    /*          X Y        color */
+    box-shadow: 0 0 2px var(--secondary-text-color);
+/* .2 second ke andr apni hover stage ko change krega */
+    transition: 0.2s ease-out;
+}
+
+.primry-btn:hover{
+  background-color: var(--accent-color-dark);
+}
+.secondry-Btn{
+border: 0.5px solid var(--secondary-text-color);
+border-radius: 6px;
+font-weight: 700;
+color: var(--primary-text-color) !important;
+padding: 12px 24px;
+transition: 0.25s ease-out;
+}
+ 
+.secondry-Btn:hover{
+    border-color: var(--accent-color);
+    color: var(--accent-color) !important;
+} 
+
+ul{
+    list-style: none;
+}
+
+/* TOP  BANNER */
+.top-banner{
+    background-image: url(asset\ 32.png); 
+    /* background-color: rgb(211, 23, 101); */
+    background-color: #e74694;
+}
+.container{
+ max-width: 1180px;
+ /* left or ryt ka margin dene ke liye hum log margin inline use krenge ek sath */
+ margin-inline: auto;
+ padding-inline: var(--padding-inline-section) ;
+}
+.banner-text{
+    color: aliceblue;
+    /* top-botm   lft-ryt */
+    padding: 15px 38px;
+    text-align: center;
+}
+
+/* NAV BAR */
+.main-nav{
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.company-logo img{
+  width: 200px;
+}
+.nav-links{
+    /* background-color: black; */
+    /* ye width hamesha 730 px ka hi rakhega  */
+  flex-basis: 730px;
+}
+.nav-links ul{
+    justify-content: end;
+    gap: 40px;
+}
+
+/* HEADER  PART */
+header{
+ padding: 50px var(--padding-inline-section) 0;
+}
+
+.header-section{
+    justify-content: center;
+    gap: 50px;
+}                                                    
+.header-right img{
+width:600px;
+}
+.header-left{
+    max-width:40vw;
+}
+.header-left h1{
+    margin-top:20px;
+}
+.get-started-btn{
+    margin-top: 20px;
+}
+
+/* COMPANIES SECTION */
+.companies-header{
+    text-align: center;
+    margin-block:30px;
+    color: var(--primary-text-color);
+}
+.logos{
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.logo{
+    height: 46px;
+}
+/* FEATURE -SECTION PART */
+.feature-SECTON{
+    /*       top        left-ryt             bottom */
+    padding: 80px  var(--padding-inline-section) 0;
+    
+}
+
+.feature-header, .example-heading-text{
+text-align: center;
+}
+
+.feature-header-text{
+    margin-bottom:20px;
+}
+
+.feature-card{
+    flex-direction: column;
+    gap:20px;
+    max-width:30%;
+}
+.feature-area{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 20px;
+    background-image:url(./assets/asset\ 41.png);
+}
+.big-feature-section{
+    padding: 30px var(--padding-inline-section) 0;
+}
+.big-feature-container{
+    gap:50px;
+}
+.feature-img img{ 
+    width: 100%;
+}
+.feature-desc{
+    flex-direction: column;
+    align-items: flex-start;
+}
+h4{
+   margin-top: 10px;
+   margin-bottom:10px;
+   /* padding: 45px; */
+}
+h2{
+    margin-bottom: 10px;
+}
+.examples-header{
+   flex-direction: column;
+   gap: 20px;
+}
+.example-card-1{
+  width: 23%;
+  position: relative;
+  min-height: 300px;
+  background: black;
+  background-image: url(asset\ 36.jpeg);
+  /* background: linear-gradient(rgb(0,0,0, 0.1), rgb(0,0,0, 0.8)), url(./asset/36.jpeg); */
+  background-size:cover;
+  transition: 1.5s;
+}
+.card-text{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: white;
+}
+.example-card-2{
+    /* .example-card:nth-child(3) */
+    width: 23%;
+    position: relative;
+    min-height: 300px;
+    background: black;
+    background-image: url(asset\ 37.jpeg);
+    background-size:cover;
+}
+.example-card-3{
+    /* .example-card:nth-child(4) */
+    width: 23%;
+    position: relative;
+    min-height: 300px;
+    background: black;
+    background-image: url(asset\ 38.jpeg);
+    background-size:cover;
+}
+.example-card-4{
+    width: 23%;
+    position: relative;
+    min-height: 300px;
+    background: black;
+    background-image: url(asset\ 39.jpeg);
+    background-size:cover;
+}
+.example-card:hover{
+    box-shadow: 0 0 10px;
+
+
+}
+.examples-area{
+    margin-top: 20px;
+    gap: 24px;
+}
